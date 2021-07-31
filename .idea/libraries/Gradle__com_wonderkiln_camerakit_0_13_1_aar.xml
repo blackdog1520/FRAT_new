@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wonderkiln:camerakit:0.13.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-camerakit-0.13.1.aar/14c75751f12dee7de5afcaee30a80c87/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-camerakit-0.13.1.aar/14c75751f12dee7de5afcaee30a80c87/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-camerakit-0.13.1.aar/14c75751f12dee7de5afcaee30a80c87/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-camerakit-0.13.1.aar/14c75751f12dee7de5afcaee30a80c87/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

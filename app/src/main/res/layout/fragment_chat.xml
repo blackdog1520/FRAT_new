@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChatFragment"
+    android:padding="1dp"
+    android:background="#F1F1F1"
+    >
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="31dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Records"
+        android:textColor="#7F7F7F"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:onClick="logoutButton"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPagerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="210dp"
+            android:background="@drawable/backg"
+            android:elevation="10dp"></androidx.viewpager.widget.ViewPager>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:windowSoftInputMode="adjustNothing"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/backgroundhome"
+
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="249dp"
+            >
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </FrameLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

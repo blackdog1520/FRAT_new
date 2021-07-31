@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FRATS</string>
+    <string name="hello">Hello,</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="teacher_mail">Teacher Mail</string>
+    <string name="subject_code">Subject Code</string>
+    <string name="for_marking_attendance_you_to_need_verify_your_face_and_have_to_scan_qr_code">*For marking attendance you to need verify your face and have to scan QR code</string>
+    <string name="start">Start</string>
+    <string name="logout">Logout</string>
+    <string name="clear_data">Clear data</string>
+    <string name="profile">Profile</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="batch">Batch</string>
+
+    <string name="register">Register</string>
+    <string name="let_s_get_started">Let\'s Get Started!</string>
+
+    <string name="todo">TODO</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="change_photo">Change photo</string>
+    <string name="cancel">Cancel</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="update">Update</string>
+    <string name="remove_photo">Remove photo</string>
+
+
+    <string name="name">Name</string>
+</resources>

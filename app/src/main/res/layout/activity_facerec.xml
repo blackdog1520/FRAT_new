@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".facerec"
+    android:background="#FF7A89">
+
+    <TextureView
+        android:id="@+id/camerView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </TextureView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/backg"
+        android:onClick="clickImage"
+        android:elevation="15dp"
+
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animImagesecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_gravity="center"
+
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="people.json"
+            app:lottie_loop="true"
+
+
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animImagesec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="scanning.json"
+            app:lottie_loop="true"
+
+
+            />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

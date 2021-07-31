@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F1F1F1"
+    tools:context=".ShowAttendanceDateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/backg"
+        android:elevation="2dp"
+        android:layout_height="match_parent"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatCount="100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_fileName="graph.json" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="3dp"
+            android:background="@drawable/backgroundhomecec"
+            android:paddingTop="70dp"
+
+            android:paddingBottom="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="14dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailAttLayout"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/textbackhome"
+                android:elevation="1dp"
+                android:outlineAmbientShadowColor="#000000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="#7F7F7F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000000">
+
+                <EditText
+                    android:id="@+id/emaillAttID"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+
+                    android:hint="Teacher email"
+
+                    android:shadowColor="#000000"
+                    android:textColor="#000000"
+                    android:textColorHint="#330000"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subjectAttLayout"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/textbackhome"
+                android:elevation="1dp"
+                android:outlineAmbientShadowColor="#000000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="#7F7F7F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailAttLayout"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000000">
+
+                <EditText
+                    android:id="@+id/subjectForAttendance"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+
+                    android:hint="Subject Code"
+
+                    android:shadowColor="#000000"
+                    android:textColor="#000000"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/DateAttID"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/textbackhome"
+                android:elevation="5dp"
+                android:hint="Select date"
+                android:paddingStart="20dp"
+                android:shadowColor="#000000"
+                android:textColor="#000000"
+                android:textColorHint="#7F7F7F"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subjectAttLayout" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                app:lottie_repeatCount="50"
+                android:id="@+id/imageButton"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/textbackhome"
+                android:onClick="ShowCalFun"
+                android:padding="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="calendar.json"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/DateAttID"
+                app:layout_constraintTop_toBottomOf="@+id/subjectAttLayout" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/buttoncancel"
+                android:onClick="showAttFun"
+                android:text="View"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DateAttID" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/backgroundhome"
+        >
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

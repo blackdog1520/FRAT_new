@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cardviewback"
+    android:padding="1dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="28dp"
+        android:id="@+id/cardViewHistory"
+        app:cardElevation="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/textViewHistory"
+            android:layout_gravity="left"
+            android:textColor="#FFFFFF"
+            android:layout_margin="2dp"
+            android:text="Sample Text"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHistorySubject"
+            android:layout_gravity="left"
+            android:layout_margin="2dp"
+            android:textColor="#F1F1F1"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sample Subject"
+
+            />
+           <LinearLayout
+               android:layout_width="20dp"
+               android:layout_height="5dp"
+               android:layout_gravity="bottom"
+               android:id="@+id/linearLayoutCard"
+               android:background="@drawable/backg"
+               android:layout_marginTop="25dp"
+               android:layout_marginStart="10dp"
+               >
+
+           </LinearLayout>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
